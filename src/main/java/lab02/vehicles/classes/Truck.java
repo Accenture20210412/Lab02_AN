@@ -1,4 +1,4 @@
-package main.java.lab02.classes;
+package main.java.lab02.vehicles.classes;
 
 public class Truck extends Car {
 

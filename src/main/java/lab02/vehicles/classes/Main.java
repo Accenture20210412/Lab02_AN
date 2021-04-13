@@ -1,7 +1,6 @@
-package main.java.lab02.classes;
+package main.java.lab02.vehicles.classes;
 
-import main.java.lab02.interfaces.Flying;
-import main.java.lab02.interfaces.Sailing;
+import main.java.lab02.vehicles.interfaces.Flying;
 
 import java.util.ArrayList;
 import java.util.List;

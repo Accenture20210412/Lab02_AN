@@ -1,4 +1,4 @@
-package main.java.lab02.interfaces;
+package main.java.lab02.vehicles.interfaces;
 
 public interface Flying {
 

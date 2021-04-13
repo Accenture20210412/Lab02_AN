@@ -1,6 +1,6 @@
-package main.java.lab02.classes;
+package main.java.lab02.vehicles.classes;
 
-import main.java.lab02.interfaces.Sailing;
+import main.java.lab02.vehicles.interfaces.Sailing;
 
 public class Ship extends Vehicle implements Sailing {
 

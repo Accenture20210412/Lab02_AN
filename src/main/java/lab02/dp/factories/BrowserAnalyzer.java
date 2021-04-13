@@ -7,9 +7,21 @@ import java.util.List;
 public class BrowserAnalyzer {
 
     public int analyze() {
-        BrowserHandlerFactory browserHandlerFactory = new OperaHandlerFactory();
-        BrowserHandler browserHandler = browserHandlerFactory.createHandler();
-        return browserHandler.openPages(List.of("www.google.pl", "www.google.pl", "www.google.pl", "www.google.pl", "www.google.pl"));
+
+        BrowserHandlerFactory chromeHandlerFactory = new ChromeHandlerFactory();
+        BrowserHandler chromeHandler = chromeHandlerFactory.createHandler();
+        int chrome = chromeHandler.openPages(List.of("www.google.pl", "www.google.pl", "www.google.pl", "www.google.pl", "www.google.pl"));
+
+        BrowserHandlerFactory firefoxHandlerFactory = new FirefoxHandlerFactory();
+        BrowserHandler firefoxHandler = firefoxHandlerFactory.createHandler();
+        int firefox = firefoxHandler.openPages(List.of("www.google.pl", "www.google.pl", "www.google.pl", "www.google.pl", "www.google.pl"));
+
+        BrowserHandlerFactory operaHandlerFactory = new OperaHandlerFactory();
+        BrowserHandler operaHandler = operaHandlerFactory.createHandler();
+        int opera = operaHandler.openPages(List.of("www.google.pl", "www.google.pl", "www.google.pl", "www.google.pl", "www.google.pl"));
+
+        int count = chrome + firefox + opera;
+        return count;
 
 
     }

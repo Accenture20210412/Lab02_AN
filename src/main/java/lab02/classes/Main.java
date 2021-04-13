@@ -25,13 +25,15 @@ public class Main {
         vehicles.add(truck);
 
         for(Vehicle vehicle : vehicles) {
-            vehicle.toString();
+            System.out.println("Dane dla pojazdu " + vehicle.getName() + ":");
             vehicle.go();
             vehicle.stop();
-            vehicle.calcFuelEfficiency();
+            System.out.println("Fuel efficiency: " + vehicle.calcFuelEfficiency());
             if (vehicle instanceof Flying) {
                 ((Flying) vehicle).callAirControl();
             }
+
+            System.out.println();
 
         }
 

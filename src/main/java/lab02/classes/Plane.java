@@ -12,27 +12,27 @@ public class Plane extends Vehicle implements Flying {
 
     @Override
     public double getFuelNeeds() {
-        return 0;
+        return 500;
     }
 
     @Override
     public double getDistance() {
-        return 0;
+        return 200;
     }
 
     @Override
     public void takeOff() {
-
+        System.out.println("Plane is taking off.");
     }
 
     @Override
     public void land() {
-
+        System.out.println("Plane is landing.");
     }
 
     @Override
     public void callAirControl() {
-
+        System.out.println("Calling air control...");
     }
 
     @Override

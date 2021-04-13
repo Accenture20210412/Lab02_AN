@@ -5,7 +5,6 @@ import main.java.lab02.interfaces.Sailing;
 
 public class Plane extends Vehicle implements Flying {
 
-
     public Plane(String name) {
         super(name);
     }

@@ -1,4 +1,4 @@
-package main.java.lab02;
+package main.java.lab02.classes;
 
 public abstract class Vehicle {
 
